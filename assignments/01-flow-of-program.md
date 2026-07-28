@@ -95,10 +95,12 @@ Code:
 
 public class Main {
     public static void main(String[] args) {
+    
         int a = 12;
         int b = 18;
         int hcf = 6;
         int lcm = 36;
+        
         System.out.println("HCF = " + hcf);
         System.out.println("LCM = " + lcm);
     }
@@ -120,10 +122,12 @@ Code:
 
 public class Main {
     public static void main(String[] args) {
+    
         int a = 10;
         int b = 20;
         int c = 30;
         int sum = a + b + c;
+        
         System.out.println("Sum = " + sum);
     }
 }
