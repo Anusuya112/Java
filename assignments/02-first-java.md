@@ -23,6 +23,7 @@ public class Main{
 Output:
 
 Enter a number: 6
+
 Even
 
 === Code Execution Successful ===
@@ -51,6 +52,7 @@ public class Main{
 Output:
 
 Enter your name: Anusuya 
+
 Hello Anusuya 
 
 === Code Execution Successful ===
@@ -84,8 +86,11 @@ public class Main{
 Output:
 
 Enter Principal: 3000
+
 Enter Time: 12
+
 Enter Rate: 7
+
 Simple Interest = 2520
 
 === Code Execution Successful ===
@@ -127,8 +132,11 @@ public class Main{
 Output:
 
 Enter first number: 6
+
 Enter second number: 7
+
 Enter operator (+,-,*,/): +
+
 Answer = 13
 
 === Code Execution Successful ===
@@ -159,10 +167,12 @@ public class Main{
     }
  }
 
- Output:
+Output:
 
 Enter first number: 8
+
 Enter second number: 4
+
 Largest number = 8
 
 === Code Execution Successful ===
@@ -192,6 +202,7 @@ public class Main{
 Output:
 
 Enter amount in Rupees: 80
+
 USD = 0.9302325581395349
 
 === Code Execution Successful ===
@@ -228,6 +239,7 @@ public class Main{
 Output:
 
 Enter the number: 15
+
 Fibonacci Series: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 
 
 === Code Execution Successful ===
@@ -260,6 +272,7 @@ public class Main{
 Output:
 
 Enter a string: 50505
+
 Palindrome
 
 === Code Execution Successful ===
@@ -291,6 +304,7 @@ public class Main{
 Output:
 
 Enter a number: 72
+
 Not Armstrong Number
 
 === Code Execution Successful ===
