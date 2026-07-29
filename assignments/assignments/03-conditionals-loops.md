@@ -322,3 +322,324 @@ Perimeter = 14.0
 
 
 
+11.Question:
+
+Perimeter Of Rectangle
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter length: ");
+        double l = sc.nextDouble();
+        System.out.print("Enter breadth: ");
+        double b = sc.nextDouble();
+        double perimeter = 2 * (l + b);
+        System.out.println("Perimeter = " + perimeter);
+    }
+}
+
+Output:
+
+Enter length: 5
+
+Enter breadth: 3
+
+Perimeter = 16.0
+
+=== Code Execution Successful ===
+
+
+
+12.Question:
+
+Perimeter Of Square
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter side: ");
+        double s = sc.nextDouble();
+        double perimeter = 4 * s;
+        System.out.println("Perimeter = " + perimeter);
+    }
+}
+
+Output:
+
+Enter side: 5
+
+Perimeter = 20.0
+
+=== Code Execution Successful ===
+
+
+
+13.Question:
+
+Perimeter Of Rhombus
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter side: ");
+        double s = sc.nextDouble();
+        double perimeter = 4 * s;
+        System.out.println("Perimeter = " + perimeter);
+    }
+}
+
+Output:
+
+Enter side: 6
+
+Perimeter = 24.0
+
+=== Code Execution Successful ===
+
+
+
+14.Question:
+
+Volume Of Cone Java Program
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        double r = sc.nextDouble();
+        System.out.print("Enter height: ");
+        double h = sc.nextDouble();
+        double volume = (3.14 * r * r * h) / 3;
+        System.out.println("Volume = " + volume);
+    }
+}
+
+Output:
+
+Enter radius: 8
+
+Enter height: 9
+
+Volume = 602.88
+
+=== Code Execution Successful ===
+
+
+
+15.Question:
+
+Volume Of Prism
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter base area: ");
+        double baseArea = sc.nextDouble();
+        System.out.print("Enter height: ");
+        double h = sc.nextDouble();
+        double volume = baseArea * h;
+        System.out.println("Volume = " + volume);
+    }
+}
+
+Output:
+
+Enter base area: 7
+
+Enter height: 8
+
+Volume = 56.0
+
+=== Code Execution Successful ===
+
+
+
+16.Question:
+
+Volume Of Cylinder
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        double r = sc.nextDouble();
+        System.out.print("Enter height: ");
+        double h = sc.nextDouble();
+        double volume = 3.14 * r * r * h;
+        System.out.println("Volume = " + volume);
+    }
+}
+
+Output:
+
+Enter radius: 6
+
+Enter height: 8
+
+Volume = 904.3199999999999
+
+=== Code Execution Successful ===
+
+
+
+17.Question:
+
+Volume Of Sphere
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        double r = sc.nextDouble();
+        double volume = (4.0 * 3.14 * r * r * r) / 3;
+        System.out.println("Volume = " + volume);
+    }
+}
+
+Output:
+
+Enter radius: 3
+
+Volume = 113.04
+
+=== Code Execution Successful ===
+
+
+
+18.Question:
+
+Volume Of Pyramid
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter base area: ");
+        double baseArea = sc.nextDouble();
+        System.out.print("Enter height: ");
+        double h = sc.nextDouble();
+        double volume = (baseArea * h) / 3;
+        System.out.println("Volume = " + volume);
+    }
+}
+
+Output:
+
+Enter base area: 4
+
+Enter height: 7
+
+Volume = 9.333333333333334
+
+=== Code Execution Successful ===
+
+
+
+19.Question:
+
+Curved Surface Area Of Cylinder
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        double r = sc.nextDouble();
+        System.out.print("Enter height: ");
+        double h = sc.nextDouble();
+        double csa = 2 * 3.14 * r * h;
+        System.out.println("Curved Surface Area = " + csa);
+    }
+}
+
+Output:
+
+Enter radius: 8
+
+Enter height: 10
+
+Curved Surface Area = 502.40000000000003
+
+=== Code Execution Successful ===
+
+
+
+20.Question:
+
+Total Surface Area Of Cube
+
+Code:
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter side: ");
+        double side = sc.nextDouble();
+        double tsa = 6 * side * side;
+        System.out.println("Total Surface Area = " + tsa);
+    }
+}
+
+Output:
+
+Enter side: 8
+
+Total Surface Area = 384.0
+
+=== Code Execution Successful ===
