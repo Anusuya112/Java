@@ -5,6 +5,7 @@ Input a year and find whether it is a leap year or not.
 Code:
 
 public class Main {
+
     public static void main(String[] args) {
 
         int year = 2024;
@@ -32,6 +33,7 @@ Take two numbers and print the sum of both.
 Code:
 
 public class Main {
+
     public static void main(String[] args) {
 
         int a = 10;
@@ -56,6 +58,7 @@ Take a number as input and print the multiplication table for it.
 Code:
 
 public class Main {
+
     public static void main(String[] args) {
 
         int n = 5;
@@ -106,6 +109,7 @@ Take 2 numbers as inputs and find their HCF and LCM.
 Code:
 
 public class Main {
+
     public static void main(String[] args) {
     
         int a = 12;
@@ -135,6 +139,7 @@ Keep taking numbers as inputs till the user enters ‘x’, after that print sum
 Code:
 
 public class Main {
+
     public static void main(String[] args) {
     
         int a = 10;
