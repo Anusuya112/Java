@@ -5,7 +5,9 @@ Write a program to print whether a number is even or odd, also take input from t
 Code:
 
 import java.util.*;
+
 public class Main{
+
     public static void main(String args[]){
         
         Scanner sc = new Scanner(System.in);
@@ -34,7 +36,9 @@ Take name as input and print a greeting message for that particular name.
 Code:
 
 import java.util.*;
+
 public class Main{
+
     public static void main(String args[]){
         
         Scanner sc = new Scanner(System.in);
@@ -60,7 +64,9 @@ Write a program to input principal, time, and rate (P, T, R) from the user and f
 Code:
 
 import java.util.*;
+
 public class Main{
+
     public static void main(String args[]) {
         
         Scanner sc = new Scanner(System.in);
@@ -93,7 +99,9 @@ Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use i
 Code:
 
 import java.util.*;
+
 public class Main{
+
     public static void main(String args[]) {
         
         Scanner sc = new Scanner(System.in);
@@ -134,7 +142,9 @@ Take 2 numbers as input and print the largest number.
 Code:
 
 import java.util.*;
+
 public class Main{
+
     public static void main(String args[]) {
         
         Scanner sc = new Scanner(System.in);
@@ -166,7 +176,9 @@ Input currency in rupees and output in USD.
 Code:
 
 import java.util.*;
+
 public class Main{
+
     public static void main(String args[]) {
         
         Scanner sc = new Scanner(System.in);
@@ -193,7 +205,9 @@ To calculate Fibonacci Series up to n numbers.
 Code:
 
 import java.util.*;
+
 public class Main{
+
     public static void main(String args[]) {
         
         Scanner sc = new Scanner(System.in);
@@ -227,7 +241,9 @@ To find out whether the given String is Palindrome or not.
 Code:
 
 import java.util.*;
+
 public class Main{
+
     public static void main(String args[]){
         
         Scanner sc = new Scanner(System.in);
@@ -257,7 +273,9 @@ To find Armstrong Number between two given number.
 Code:
 
 import java.util.*;
+
 public class Main{
+
     public static void main(String args[]) {
 
         Scanner sc = new Scanner(System.in);
