@@ -1,0 +1,1118 @@
+QUESTION: 1
+Print all elements of an array
+  CODING:
+import java.util.Scanner;
+
+public class PrintArray {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        scanner.close();
+    }
+}
+OUTPUT:
+Enter array size: 2
+Enter 2 elements: 55
+55
+
+Array elements: 55 55 
+
+QUESTION: 2
+  Find the sum of all elements
+  CODING:
+import java.util.Scanner;
+
+public class ArraySum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter array size: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        int sum = 0;
+        
+        System.out.print("Enter " + n + " elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+            sum += arr[i];
+        }
+
+        System.out.println("Sum: " + sum);
+        scanner.close();
+    }
+}
+OUTPUT:
+Enter array size: 2
+Enter 2 elements: 22
+22
+Sum: 44
+
+  QUESTION: 3
+  Find the average of array elements
+  CODING:
+import java.util.Scanner;
+
+public class ArrayAverage {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+
+        System.out.print("Enter the number of elements in the array: ");
+        int size = scanner.nextInt();
+        
+
+        double[] numbers = new double[size];
+        double sum = 0;
+        
+        
+        System.out.println("Enter " + size + " numbers:");
+        for (int i = 0; i < size; i++) {
+            System.out.print("Element " + (i + 1) + ": ");
+            numbers[i] = scanner.nextDouble();
+            sum += numbers[i]; 
+        }
+        
+        
+        double average = sum / size;
+        
+        
+        System.out.println("\n--- Results ---");
+        System.out.println("Sum of elements: " + sum);
+        System.out.println("Average of elements: " + average);
+        
+        
+        scanner.close();
+    }
+}
+
+OUTPUT:
+Enter the number of elements in the array: 4
+Enter 4 numbers:
+Element 1: 2
+Element 2: 3
+Element 3: 4
+Element 4: 5
+
+--- Results ---
+Sum of elements: 14.0
+Average of elements: 3.5
+
+QUESTION: 4
+Find the Largest element
+CODING:
+import java.util.Scanner;
+
+public class LargestElement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        int max = arr[0];
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println("The largest element is: " + max);
+        scanner.close();
+    }
+}
+OUTPUT:
+Enter the number of elements: 4
+Enter the elements: 
+5
+5
+
+444
+444
+The largest element is: 444
+
+QUESTION: 5
+Find the Smallest element
+CODING:
+import java.util.Scanner;
+
+public class SmallestElement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        int min = arr[0];
+        for (int i = 1; i < n; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        System.out.println("Smallest element: " + min);
+    }
+}
+OUTPUT:
+Enter the number of elements: 2
+Enter the elements: 
+3
+45
+Smallest element: 3
+
+QUESTION: 6
+Count even and odd numbers
+CODING:
+import java.util.Scanner;
+
+public class CountEvenOdd {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int evenCount = 0;
+        int oddCount = 0;
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            int num = scanner.nextInt();
+            if (num % 2 == 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+        System.out.println("Even elements count: " + evenCount);
+        System.out.println("Odd elements count: " + oddCount);
+    }
+}
+OUTPUT:
+Enter the number of elements: 3
+Enter the elements: 
+3
+
+
+
+
+
+3
+
+
+2
+Even elements count: 1
+Odd elements count: 2
+
+QUESTION: 7
+Reverse an Array
+CODING:
+import java.util.Scanner;
+
+public class ReverseArray {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        for (int i = 0; i < n / 2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[n - 1 - i];
+            arr[n - 1 - i] = temp;
+        }
+        System.out.println("Reversed array: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+OUTPUT:
+Enter the number of elements: 2
+Enter the elements: 
+
+2
+5
+Reversed array: 
+5 2 
+
+QUESTION: 8
+Search for a given element
+CODING:
+import java.util.Scanner;
+
+public class SearchElement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        System.out.print("Enter the element to search for: ");
+        int target = scanner.nextInt();
+        int index = -1;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == target) {
+                index = i;
+                break;
+            }
+        }
+        if (index != -1) {
+            System.out.println("Element found at index: " + index);
+        } else {
+            System.out.println("Element not found in the array.");
+        }
+    }
+}
+OUTPUT:
+Enter the number of elements: 5
+Enter the elements: 
+3
+2
+1
+9
+4
+Enter the element to search for: 4
+Element found at index: 4
+
+QUESTION: 9
+Count the occurennce of a specific number
+CODING:
+import java.util.Scanner;
+
+public class CountOccurrence {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        System.out.print("Enter the element to count: ");
+        int target = scanner.nextInt();
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == target) {
+                count++;
+            }
+        }
+        System.out.println("Occurrence of " + target + " is: " + count);
+    }
+}
+
+OUTPUT:
+Enter the number of elements: 4
+Enter the elements: 
+5
+8
+3
+8
+Enter the element to count: 8
+Occurrence of 8 is: 2
+
+QUESTION: 10
+Find the second largest element.
+CODING:
+import java.util.Scanner;
+
+public class SecondLargest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        if (n < 2) {
+            System.out.println("Array must have at least two elements.");
+            return;
+        }
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > largest) {
+                secondLargest = largest;
+                largest = arr[i];
+            } else if (arr[i] > secondLargest && arr[i] != largest) {
+                secondLargest = arr[i];
+            }
+        }
+        if (secondLargest == Integer.MIN_VALUE) {
+            System.out.println("There is no second largest element (all elements might be equal).");
+        } else {
+            System.out.println("Second largest element: " + secondLargest);
+        }
+    }
+}
+OUTPUT:
+Enter the number of elements: 7
+Enter the elements: 
+3
+9
+1
+7
+4
+3
+2
+Second largest element: 7
+
+QUESTION: 11
+Remove dublicate elements.
+CODING:
+import java.util.Scanner;
+
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        int uniqueCount = 0;
+        for (int i = 0; i < n; i++) {
+            boolean isDuplicate = false;
+            for (int j = 0; j < i; j++) {
+                if (arr[i] == arr[j]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            if (!isDuplicate) {
+                arr[uniqueCount] = arr[i];
+                uniqueCount++;
+            }
+        }
+        System.out.println("Array after removing duplicates: ");
+        for (int i = 0; i < uniqueCount; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+OUTPUT:
+Enter the number of elements: 9
+Enter the elements: 
+7
+8
+4
+3
+2
+0
+
+
+2
+1
+3
+Array after removing duplicates: 
+7 8 4 3 2 0 1
+
+QUESTION:12
+Merge two arrays
+CODING:
+import java.util.Scanner;
+
+public class MergeArrays {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input first array
+        System.out.print("Enter size of first array: ");
+        int n1 = scanner.nextInt();
+        int[] arr1 = new int[n1];
+        System.out.println("Enter elements for first array: ");
+        for (int i = 0; i < n1; i++) {
+            arr1[i] = scanner.nextInt();
+        }
+
+        // Input second array
+        System.out.print("Enter size of second array: ");
+        int n2 = scanner.nextInt();
+        int[] arr2 = new int[n2];
+        System.out.println("Enter elements for second array: ");
+        for (int i = 0; i < n2; i++) {
+            arr2[i] = scanner.nextInt();
+        }
+
+        // Create a new array to hold both
+        int[] mergedArr = new int[n1 + n2];
+
+        // Copy elements from the first array
+        for (int i = 0; i < n1; i++) {
+            mergedArr[i] = arr1[i];
+        }
+
+        // Copy elements from the second array
+        for (int i = 0; i < n2; i++) {
+            mergedArr[n1 + i] = arr2[i];
+        }
+
+        // Print the combined result
+        System.out.println("Merged array: ");
+        for (int i = 0; i < mergedArr.length; i++) {
+            System.out.print(mergedArr[i] + " ");
+        }
+    }
+}
+OUTPUT:
+Enter size of first array: 2
+Enter elements for first array: 
+1
+
+2
+Enter size of second array: 4
+Enter elements for second array:
+1
+1
+4
+5
+Merged array: 
+1 2 1 1 4 5 
+
+QUESTION:13
+Find the missing number(1 to N).
+CODING:
+import java.util.Scanner;
+
+public class MissingNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the value of N: ");
+        int n = scanner.nextInt();
+
+        int[] arr = new int[n - 1];
+        System.out.println("Enter " + (n - 1) + " elements: ");
+        for (int i = 0; i < n - 1; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        int expectedSum = n * (n + 1) / 2;
+        int actualSum = 0;
+        for (int i = 0; i < n - 1; i++) {
+            actualSum += arr[i];
+        }
+
+        int missingNumber = expectedSum - actualSum;
+        System.out.println("The missing number is: " + missingNumber);
+    }
+}
+OUTPUT:
+Enter the value of N: 4
+Enter 3 elements: 
+3
+6
+9
+The missing number is: -8
+
+
+QUESTION:14
+Move all zeros to the end.
+CODING:
+import java.util.Scanner;
+
+public class MoveZeros {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] != 0) {
+                int temp = arr[i];
+                arr[i] = arr[count];
+                arr[count] = temp;
+                count++;
+            }
+        }
+        System.out.println("Array after moving zeros to the end: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+OUTPUT:
+Enter the number of elements: 4
+Enter the elements: 
+8
+
+9
+3
+2
+Array after moving zeros to the end: 
+8 9 3 2 
+
+
+QUESTION: 15
+Rotate array right by one position.
+CODING:
+import java.util.Scanner;
+
+public class RotateArrayRight {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        if (n > 1) {
+            int last = arr[n - 1];
+            for (int i = n - 1; i > 0; i--) {
+                arr[i] = arr[i - 1];
+            }
+            arr[0] = last;
+        }
+        System.out.println("Array after right rotation: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+OUTPUT:
+Enter the number of elements: 3
+Enter the elements: 
+9
+0
+
+2
+Array after right rotation: 
+2 9 0 
+
+
+QUESTION: 16
+Find the frequency of each element.
+CODING:
+import java.util.Scanner;
+
+public class FrequencyElement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        boolean[] visited = new boolean[n];
+        System.out.println("Element | Frequency");
+        for (int i = 0; i < n; i++) {
+            if (visited[i]) {
+                continue;
+            }
+            int count = 1;
+            for (int j = i + 1; j < n; j++) {
+                if (arr[i] == arr[j]) {
+                    visited[j] = true;
+                    count++;
+                }
+            }
+            System.out.println(arr[i] + "      | " + count);
+        }
+    }
+}
+OUTPUT:
+Enter the number of elements: 4
+Enter the elements: 
+9
+2
+8
+3
+Element | Frequency
+9      | 1
+2      | 1
+8      | 1
+3      | 1
+
+QUESTION: 17
+Sort an array in ascending order (without using Arrays.sort())
+CODING:
+import java.util.Scanner;
+
+public class SortArray {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println("Array sorted in ascending order: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+OUTPUT:
+Enter the number of elements: 5
+Enter the elements: 
+3
+2
+
+6
+7
+5
+Array sorted in ascending order: 
+2 3 5 6 7
+
+QUESTION:18
+Sort an array in desecending order.
+CODING:
+import java.util.Scanner;
+
+public class SortDescending {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] < arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println("Array sorted in descending order: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+OUTPUT:
+Enter the number of elements: 7
+Enter the elements: 
+9
+8
+2
+1
+3
+5
+7
+Array sorted in descending order: 
+9 8 7 5 3 2 1 
+
+QUESTION:19
+Find the intersection of two arrays
+CODING:
+import java.util.Scanner;
+
+public class ArrayIntersection {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter size of first array: ");
+        int n1 = scanner.nextInt();
+        int[] arr1 = new int[n1];
+        System.out.println("Enter elements for first array: ");
+        for (int i = 0; i < n1; i++) {
+            arr1[i] = scanner.nextInt();
+        }
+
+        System.out.print("Enter size of second array: ");
+        int n2 = scanner.nextInt();
+        int[] arr2 = new int[n2];
+        System.out.println("Enter elements for second array: ");
+        for (int i = 0; i < n2; i++) {
+            arr2[i] = scanner.nextInt();
+        }
+
+        boolean[] visited2 = new boolean[n2];
+        System.out.println("Intersection of the two arrays: ");
+
+        for (int i = 0; i < n1; i++) {
+            boolean isFirstOccurrence = true;
+            for (int k = 0; k < i; k++) {
+                if (arr1[i] == arr1[k]) {
+                    isFirstOccurrence = false;
+                    break;
+                }
+            }
+
+            if (isFirstOccurrence) {
+                for (int j = 0; j < n2; j++) {
+                    if (arr1[i] == arr2[j] && !visited2[j]) {
+                        System.out.print(arr1[i] + " ");
+                        visited2[j] = true;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+}
+OUTPUT:
+Enter size of first array: 4
+Enter elements for first array: 
+3
+2
+1
+5
+Enter size of second array: 9
+Enter elements for second array: 
+4
+3
+2
+1
+5
+6
+7
+8
+9
+Intersection of the two arrays: 
+3 2 1 5 
+
+QUESTION:20
+Find the union of two arrays
+CODING:
+import java.util.Scanner;
+
+public class ArrayUnion {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter size of first array: ");
+        int n1 = scanner.nextInt();
+        int[] arr1 = new int[n1];
+        System.out.println("Enter elements for first array: ");
+        for (int i = 0; i < n1; i++) {
+            arr1[i] = scanner.nextInt();
+        }
+
+        System.out.print("Enter size of second array: ");
+        int n2 = scanner.nextInt();
+        int[] arr2 = new int[n2];
+        System.out.println("Enter elements for second array: ");
+        for (int i = 0; i < n2; i++) {
+            arr2[i] = scanner.nextInt();
+        }
+
+        System.out.println("Union of the two arrays: ");
+
+        for (int i = 0; i < n1; i++) {
+            boolean isDuplicate = false;
+            for (int j = 0; j < i; j++) {
+                if (arr1[i] == arr1[j]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            if (!isDuplicate) {
+                System.out.print(arr1[i] + " ");
+            }
+        }
+
+        for (int i = 0; i < n2; i++) {
+            boolean isDuplicate = false;
+            for (int j = 0; j < i; j++) {
+                if (arr2[i] == arr2[j]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            if (!isDuplicate) {
+                boolean existsInFirst = false;
+                for (int j = 0; j < n1; j++) {
+                    if (arr2[i] == arr1[j]) {
+                        existsInFirst = true;
+                        break;
+                    }
+                }
+                if (!existsInFirst) {
+                    System.out.print(arr2[i] + " ");
+                }
+            }
+        }
+    }
+}
+OUTPUT:
+Enter size of first array: 7
+Enter elements for first array: 
+6
+5
+4
+3
+2
+1
+8
+Enter size of second array: 4
+Enter elements for second array: 
+4
+5
+8
+0
+Union of the two arrays: 
+6 5 4 3 2 1 8 0 
+
+QUESTION: 21
+Find all pairs whose sum equals a target value.
+CODING:
+import java.util.Scanner;
+
+public class PairSum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        System.out.print("Enter the target sum value: ");
+        int target = scanner.nextInt();
+
+        System.out.println("Pairs whose sum equals " + target + ":");
+        boolean pairsFound = false;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (arr[i] + arr[j] == target) {
+                    System.out.println("(" + arr[i] + ", " + arr[j] + ")");
+                    pairsFound = true;
+                }
+            }
+        }
+
+        if (!pairsFound) {
+            System.out.println("No such pairs exist in the array.");
+        }
+    }
+}
+OUTPUT:
+Enter the number of elements: 3
+Enter the elements: 
+8
+3
+9
+Enter the target sum value: 3
+Pairs whose sum equals 3:
+No such pairs exist in the array.
+
+QUESTION:22
+Find the maximum subarray sum(Kadane's Algorithm).
+CODING:
+import java.util.Scanner;
+
+public class MaxSubarraySum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        int maxSoFar = arr[0];
+        int maxEndingHere = arr[0];
+
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > maxEndingHere + arr[i]) {
+                maxEndingHere = arr[i];
+            } else {
+                maxEndingHere = maxEndingHere + arr[i];
+            }
+
+            if (maxEndingHere > maxSoFar) {
+                maxSoFar = maxEndingHere;
+            }
+        }
+
+        System.out.println("Maximum subarray sum: " + maxSoFar);
+    }
+}
+OUTPUT:
+Enter the number of elements: 3
+Enter the elements: 
+
+2
+1
+4
+Maximum subarray sum: 7
+
+QUESTION:23
+Find leaders in an array
+CODING:
+import java.util.Scanner;
+
+public class ArrayLeaders {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+
+        System.out.println("Enter the elements: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        System.out.println("Leaders in the array: ");
+        int maxFromRight = arr[n - 1];
+        System.out.print(maxFromRight + " ");
+
+        for (int i = n - 2; i >= 0; i--) {
+            if (arr[i] >= maxFromRight) {
+                maxFromRight = arr[i];
+                System.out.print(maxFromRight + " ");
+            }
+        }
+    }
+}
+OUTPUT:
+Enter the number of elements: 2
+Enter the elements: 
+34
+45
+Leaders in the array: 
+45 
+
+QUESTION:24
+Find the equilibrium index
+CODING:
+import java.util.Scanner;
+
+public class EquilibriumIndex {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+
+        System.out.println("Enter the elements: ");
+        int totalSum = 0;
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+            totalSum += arr[i];
+        }
+
+        int leftSum = 0;
+        int equilibriumIndex = -1;
+
+        for (int i = 0; i < n; i++) {
+            totalSum -= arr[i];
+
+            if (leftSum == totalSum) {
+                equilibriumIndex = i;
+                break;
+            }
+
+            leftSum += arr[i];
+        }
+
+        if (equilibriumIndex != -1) {
+            System.out.println("First equilibrium index found at index: " + equilibriumIndex);
+        } else {
+            System.out.println("No equilibrium index exists in the array.");
+        }
+    }
+}
+OUTPUT
+Enter the number of elements: 3
+Enter the elements: 
+2
+1
+5
+No equilibrium index exists in the array.
+
+QUESTION:25
+Print all the elements of a matrix.
+CODING:
+import java.util.Scanner;
+
+public class PrintMatrix {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+        System.out.print("Enter the number of columns: ");
+        int cols = scanner.nextInt();
+
+        int[][] matrix = new int[rows][cols];
+
+        System.out.println("Enter the matrix elements: ");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                matrix[i][j] = scanner.nextInt();
+            }
+        }
+
+        System.out.println("The matrix elements are: ");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+OUTPUT:
+Enter the number of rows: 3
+Enter the number of columns: 2
+Enter the matrix elements: 
+4
+5
+3
+2
+2
+1
+The matrix elements are: 
+4 5 
+3 2 
+2 1
