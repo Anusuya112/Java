@@ -1,0 +1,219 @@
+1.Question:
+
+Reverse a String
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        for (int i = str.length() - 1; i >= 0; i--) {
+            System.out.print(str.charAt(i));
+        }
+    }
+}
+
+Output:
+
+
+
+2.Question:
+
+Palindrome Check
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String rev="";
+        for(int i=s.length()-1;i>=0;i--)
+            rev+=s.charAt(i);
+        System.out.println(s.equals(rev)?"Palindrome":"Not Palindrome");
+    }
+}
+
+Output:
+
+
+
+3.Question:
+
+Vowel and Consonant Counter
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine().toLowerCase();
+        int v = 0, c = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                v++;
+            else if (ch >= 'a' && ch <= 'z')
+                c++;
+        }
+        System.out.println("Vowels = " + v);
+        System.out.println("Consonants = " + c);
+    }
+}
+
+Output:
+
+
+
+4.Question:
+
+Remove Whitespace -> Given Input: str = "  Hello   World  " Expected Output: Result = "HelloWorld"
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        String str = "  Hello   World  ";
+        String[] a = str.trim().split("\\s+");
+        System.out.println(a[0] + a[1]);
+    }
+}
+
+Output:
+
+
+
+5.Question:
+
+Digit-Only Check
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        System.out.println(str.matches("[0-9]+"));
+    }
+}
+
+Output:
+
+
+
+6.Question:
+
+Toggle Case -> str = "Hello World" -> Result = hELLO wORLD
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char[] ch = sc.nextLine().toCharArray();
+        for (int i = 0; i < ch.length; i++) {
+            if (Character.isUpperCase(ch[i]))
+                ch[i] = Character.toLowerCase(ch[i]);
+            else if (Character.isLowerCase(ch[i]))
+                ch[i] = Character.toUpperCase(ch[i]);
+        }
+        System.out.println(ch);
+    }
+}
+
+Output:
+
+
+
+7.Question:
+
+String Length Without .length()
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        char[] ch = s.toCharArray();
+        int count = 0;
+        for (char c : ch)
+            count++;
+        System.out.println(count);
+    }
+}
+
+Output:
+
+
+
+8.Question:
+
+Anagram Check -> str1 = "listen", str2 = "silent" => Is Anagram = true
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char[] a = sc.nextLine().toCharArray();
+        char[] b = sc.nextLine().toCharArray();
+        Arrays.sort(a);
+        Arrays.sort(b);
+        System.out.println(Arrays.equals(a, b));
+    }
+}
+
+Output:
+
+
+
+9.Question:
+
+Reverse Words ->str = "Java is fun" => Result = fun is Java.
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        String[] a = str.split(" ");
+        for (int i = a.length - 1; i >= 0; i--) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+
+Output:
+
+
+
+10.Question:
+
+Count Words -> str = "  Java   is   fun  "=> Word Count = 3
+
+Program:
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine().trim();
+        String[] a = str.split("\\s+");
+        System.out.println("Word Count = " + a.length);
+    }
+}
+
+Output:
+
