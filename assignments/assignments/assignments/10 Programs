@@ -17,7 +17,11 @@ public class Main {
 
 Output:
 
+98765432
 
+23456789
+
+=== Code Execution Successful ===
 
 2.Question:
 
@@ -39,7 +43,11 @@ public class Main {
 
 Output:
 
+10101
 
+Palindrome
+
+=== Code Execution Successful ===
 
 3.Question:
 
@@ -67,7 +75,13 @@ public class Main {
 
 Output:
 
+anusuya
 
+Vowels = 4
+
+Consonants = 3
+
+=== Code Execution Successful ===
 
 4.Question:
 
@@ -86,7 +100,9 @@ public class Main {
 
 Output:
 
+HelloWorld
 
+=== Code Execution Successful ===
 
 5.Question:
 
@@ -105,7 +121,11 @@ public class Main {
 
 Output:
 
+1212
 
+true
+
+=== Code Execution Successful ===
 
 6.Question:
 
@@ -130,7 +150,11 @@ public class Main {
 
 Output:
 
+"Hello World"
 
+"hELLO wORLD"
+
+=== Code Execution Successful ===
 
 7.Question:
 
@@ -153,7 +177,11 @@ public class Main {
 
 Output:
 
+Anusuya
 
+7
+
+=== Code Execution Successful ===
 
 8.Question:
 
