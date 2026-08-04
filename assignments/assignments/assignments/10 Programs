@@ -203,7 +203,13 @@ public class Main {
 
 Output:
 
+LISTEN
 
+SILENT
+
+true
+
+=== Code Execution Successful ===
 
 9.Question:
 
@@ -225,7 +231,11 @@ public class Main {
 
 Output:
 
+Java is fun
 
+fun is Java 
+
+=== Code Execution Successful ===
 
 10.Question:
 
@@ -245,3 +255,8 @@ public class Main {
 
 Output:
 
+Java is fun 
+
+Word Count = 3
+
+=== Code Execution Successful ===
