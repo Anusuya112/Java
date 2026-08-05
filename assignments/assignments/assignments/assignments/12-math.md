@@ -190,6 +190,14 @@ public class Solution{
     }
 }
 
+Output:
+
+12
+
+233
+
+=== Code Execution Successful ===
+
 9.Question:
 
 Self Dividing Numbers
@@ -260,3 +268,10 @@ public class Solution{
     }
 }
 
+Output:
+
+4
+
+true
+
+=== Code Execution Successful ===
