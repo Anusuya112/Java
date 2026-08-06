@@ -1,0 +1,53 @@
+1.Question:
+Student Class and Object
+
+Program:
+class Student {
+    String name;
+    int rollNo;
+
+    void display() {
+        System.out.println("Student Name: " + name);
+        System.out.println("Roll Number: " + rollNo);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+
+        s1.name = "Anusuya";
+        s1.rollNo = 5187;
+
+        s1.display();
+    }
+}
+
+Output:
+Student Name: Anusuya
+Roll Number: 5187
+
+2.Question:
+Employee Class and Object
+
+Program:
+class Employee {
+    String name;
+    double salary;
+
+    void showDetails() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Salary: " + salary);
+    }
+
+    public static void main(String[] args) {
+        Employee e1 = new Employee();
+
+        e1.name = "Anusuya";
+        e1.salary = 80000;
+
+        e1.showDetails();
+    }
+}
+
+Output:
+Employee Name:Anusuya
+Salary: 80000.0
