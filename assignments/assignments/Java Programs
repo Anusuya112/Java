@@ -1,6 +1,6 @@
-QUESTION: 1
+1.Question:
 Print all elements of an array
-  CODING:
+Code:
 import java.util.Scanner;
 
 public class PrintArray {
@@ -18,16 +18,16 @@ public class PrintArray {
         scanner.close();
     }
 }
-OUTPUT:
+Output:
 Enter array size: 2
 Enter 2 elements: 55
 55
 
 Array elements: 55 55 
 
-QUESTION: 2
-  Find the sum of all elements
-  CODING:
+2.Question:
+Find the sum of all elements
+Code:
 import java.util.Scanner;
 
 public class ArraySum {
@@ -48,15 +48,15 @@ public class ArraySum {
         scanner.close();
     }
 }
-OUTPUT:
+Output:
 Enter array size: 2
 Enter 2 elements: 22
 22
 Sum: 44
 
-  QUESTION: 3
-  Find the average of array elements
-  CODING:
+3.Question:
+Find the average of array elements
+Code:
 import java.util.Scanner;
 
 public class ArrayAverage {
@@ -93,7 +93,7 @@ public class ArrayAverage {
     }
 }
 
-OUTPUT:
+Output:
 Enter the number of elements in the array: 4
 Enter 4 numbers:
 Element 1: 2
@@ -105,9 +105,9 @@ Element 4: 5
 Sum of elements: 14.0
 Average of elements: 3.5
 
-QUESTION: 4
+4.Question:
 Find the Largest element
-CODING:
+Code:
 import java.util.Scanner;
 
 public class LargestElement {
@@ -130,7 +130,7 @@ public class LargestElement {
         scanner.close();
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 4
 Enter the elements: 
 5
@@ -140,9 +140,9 @@ Enter the elements:
 444
 The largest element is: 444
 
-QUESTION: 5
+5.Question:
 Find the Smallest element
-CODING:
+Code:
 import java.util.Scanner;
 
 public class SmallestElement {
@@ -164,16 +164,16 @@ public class SmallestElement {
         System.out.println("Smallest element: " + min);
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 2
 Enter the elements: 
 3
 45
 Smallest element: 3
 
-QUESTION: 6
+6.Question:
 Count even and odd numbers
-CODING:
+Code:
 import java.util.Scanner;
 
 public class CountEvenOdd {
@@ -196,25 +196,18 @@ public class CountEvenOdd {
         System.out.println("Odd elements count: " + oddCount);
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 3
 Enter the elements: 
 3
-
-
-
-
-
 3
-
-
 2
 Even elements count: 1
 Odd elements count: 2
 
-QUESTION: 7
+7.Question:
 Reverse an Array
-CODING:
+Code:
 import java.util.Scanner;
 
 public class ReverseArray {
@@ -238,7 +231,7 @@ public class ReverseArray {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 2
 Enter the elements: 
 
@@ -247,9 +240,9 @@ Enter the elements:
 Reversed array: 
 5 2 
 
-QUESTION: 8
+8.Question:
 Search for a given element
-CODING:
+Code:
 import java.util.Scanner;
 
 public class SearchElement {
@@ -278,7 +271,7 @@ public class SearchElement {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 5
 Enter the elements: 
 3
@@ -289,9 +282,9 @@ Enter the elements:
 Enter the element to search for: 4
 Element found at index: 4
 
-QUESTION: 9
+9.Question:
 Count the occurennce of a specific number
-CODING:
+Code:
 import java.util.Scanner;
 
 public class CountOccurrence {
@@ -315,8 +308,7 @@ public class CountOccurrence {
         System.out.println("Occurrence of " + target + " is: " + count);
     }
 }
-
-OUTPUT:
+Output:
 Enter the number of elements: 4
 Enter the elements: 
 5
@@ -326,9 +318,9 @@ Enter the elements:
 Enter the element to count: 8
 Occurrence of 8 is: 2
 
-QUESTION: 10
+10.Question:
 Find the second largest element.
-CODING:
+Code:
 import java.util.Scanner;
 
 public class SecondLargest {
@@ -362,7 +354,7 @@ public class SecondLargest {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 7
 Enter the elements: 
 3
@@ -374,9 +366,9 @@ Enter the elements:
 2
 Second largest element: 7
 
-QUESTION: 11
+11.Question:
 Remove dublicate elements.
-CODING:
+Code:
 import java.util.Scanner;
 
 public class RemoveDuplicates {
@@ -409,7 +401,7 @@ public class RemoveDuplicates {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 9
 Enter the elements: 
 7
@@ -418,24 +410,20 @@ Enter the elements:
 3
 2
 0
-
-
 2
 1
 3
 Array after removing duplicates: 
 7 8 4 3 2 0 1
 
-QUESTION:12
+12.Question:
 Merge two arrays
-CODING:
+Code:
 import java.util.Scanner;
 
 public class MergeArrays {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Input first array
         System.out.print("Enter size of first array: ");
         int n1 = scanner.nextInt();
         int[] arr1 = new int[n1];
@@ -443,8 +431,6 @@ public class MergeArrays {
         for (int i = 0; i < n1; i++) {
             arr1[i] = scanner.nextInt();
         }
-
-        // Input second array
         System.out.print("Enter size of second array: ");
         int n2 = scanner.nextInt();
         int[] arr2 = new int[n2];
@@ -452,28 +438,20 @@ public class MergeArrays {
         for (int i = 0; i < n2; i++) {
             arr2[i] = scanner.nextInt();
         }
-
-        // Create a new array to hold both
         int[] mergedArr = new int[n1 + n2];
-
-        // Copy elements from the first array
         for (int i = 0; i < n1; i++) {
             mergedArr[i] = arr1[i];
         }
-
-        // Copy elements from the second array
         for (int i = 0; i < n2; i++) {
             mergedArr[n1 + i] = arr2[i];
         }
-
-        // Print the combined result
         System.out.println("Merged array: ");
         for (int i = 0; i < mergedArr.length; i++) {
             System.out.print(mergedArr[i] + " ");
         }
     }
 }
-OUTPUT:
+Output:
 Enter size of first array: 2
 Enter elements for first array: 
 1
@@ -488,9 +466,9 @@ Enter elements for second array:
 Merged array: 
 1 2 1 1 4 5 
 
-QUESTION:13
+13.Question:
 Find the missing number(1 to N).
-CODING:
+Code:
 import java.util.Scanner;
 
 public class MissingNumber {
@@ -516,7 +494,7 @@ public class MissingNumber {
         System.out.println("The missing number is: " + missingNumber);
     }
 }
-OUTPUT:
+Output:
 Enter the value of N: 4
 Enter 3 elements: 
 3
@@ -525,9 +503,9 @@ Enter 3 elements:
 The missing number is: -8
 
 
-QUESTION:14
+14.Question:
 Move all zeros to the end.
-CODING:
+Code:
 import java.util.Scanner;
 
 public class MoveZeros {
@@ -555,11 +533,10 @@ public class MoveZeros {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 4
 Enter the elements: 
 8
-
 9
 3
 2
@@ -567,9 +544,9 @@ Array after moving zeros to the end:
 8 9 3 2 
 
 
-QUESTION: 15
+15.Question:
 Rotate array right by one position.
-CODING:
+Code:
 import java.util.Scanner;
 
 public class RotateArrayRight {
@@ -595,20 +572,19 @@ public class RotateArrayRight {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 3
 Enter the elements: 
 9
 0
-
 2
 Array after right rotation: 
 2 9 0 
 
 
-QUESTION: 16
+16.Question:
 Find the frequency of each element.
-CODING:
+Code:
 import java.util.Scanner;
 
 public class FrequencyElement {
@@ -638,7 +614,7 @@ public class FrequencyElement {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 4
 Enter the elements: 
 9
@@ -651,9 +627,9 @@ Element | Frequency
 8      | 1
 3      | 1
 
-QUESTION: 17
+17.Question:
 Sort an array in ascending order (without using Arrays.sort())
-CODING:
+Code:
 import java.util.Scanner;
 
 public class SortArray {
@@ -682,21 +658,20 @@ public class SortArray {
     }
 }
 
-OUTPUT:
+Output:
 Enter the number of elements: 5
 Enter the elements: 
 3
 2
-
 6
 7
 5
 Array sorted in ascending order: 
 2 3 5 6 7
 
-QUESTION:18
+18.Question:
 Sort an array in desecending order.
-CODING:
+Code:
 import java.util.Scanner;
 
 public class SortDescending {
@@ -724,8 +699,7 @@ public class SortDescending {
         }
     }
 }
-
-OUTPUT:
+Output:
 Enter the number of elements: 7
 Enter the elements: 
 9
@@ -738,9 +712,9 @@ Enter the elements:
 Array sorted in descending order: 
 9 8 7 5 3 2 1 
 
-QUESTION:19
+19.Question:
 Find the intersection of two arrays
-CODING:
+Code:
 import java.util.Scanner;
 
 public class ArrayIntersection {
@@ -787,7 +761,7 @@ public class ArrayIntersection {
         }
     }
 }
-OUTPUT:
+Output:
 Enter size of first array: 4
 Enter elements for first array: 
 3
@@ -808,9 +782,9 @@ Enter elements for second array:
 Intersection of the two arrays: 
 3 2 1 5 
 
-QUESTION:20
+20.Question:
 Find the union of two arrays
-CODING:
+Code:
 import java.util.Scanner;
 
 public class ArrayUnion {
@@ -871,7 +845,7 @@ public class ArrayUnion {
         }
     }
 }
-OUTPUT:
+Output:
 Enter size of first array: 7
 Enter elements for first array: 
 6
@@ -890,9 +864,9 @@ Enter elements for second array:
 Union of the two arrays: 
 6 5 4 3 2 1 8 0 
 
-QUESTION: 21
+21.Question:
 Find all pairs whose sum equals a target value.
-CODING:
+Code:
 import java.util.Scanner;
 
 public class PairSum {
@@ -928,7 +902,7 @@ public class PairSum {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 3
 Enter the elements: 
 8
@@ -938,9 +912,9 @@ Enter the target sum value: 3
 Pairs whose sum equals 3:
 No such pairs exist in the array.
 
-QUESTION:22
+22.Question:
 Find the maximum subarray sum(Kadane's Algorithm).
-CODING:
+Code:
 import java.util.Scanner;
 
 public class MaxSubarraySum {
@@ -974,18 +948,17 @@ public class MaxSubarraySum {
         System.out.println("Maximum subarray sum: " + maxSoFar);
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 3
 Enter the elements: 
-
 2
 1
 4
 Maximum subarray sum: 7
 
-QUESTION:23
+23.Question:
 Find leaders in an array
-CODING:
+Code:
 import java.util.Scanner;
 
 public class ArrayLeaders {
@@ -1013,7 +986,7 @@ public class ArrayLeaders {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of elements: 2
 Enter the elements: 
 34
@@ -1021,9 +994,9 @@ Enter the elements:
 Leaders in the array: 
 45 
 
-QUESTION:24
+24.Question:
 Find the equilibrium index
-CODING:
+Code:
 import java.util.Scanner;
 
 public class EquilibriumIndex {
@@ -1062,7 +1035,7 @@ public class EquilibriumIndex {
         }
     }
 }
-OUTPUT
+Output:
 Enter the number of elements: 3
 Enter the elements: 
 2
@@ -1070,9 +1043,9 @@ Enter the elements:
 5
 No equilibrium index exists in the array.
 
-QUESTION:25
+25.Question:
 Print all the elements of a matrix.
-CODING:
+Code:
 import java.util.Scanner;
 
 public class PrintMatrix {
@@ -1102,7 +1075,7 @@ public class PrintMatrix {
         }
     }
 }
-OUTPUT:
+Output:
 Enter the number of rows: 3
 Enter the number of columns: 2
 Enter the matrix elements: 
