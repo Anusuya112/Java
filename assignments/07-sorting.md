@@ -9,6 +9,7 @@ import java.util.*;
 class Main {
 
     public static void main(String[] args) {
+    
         int[] a={1,2,3,0,0,0}, b={2,5,6};
         
         for(int i=0;i<3;i++) a[i+3]=b[i];
