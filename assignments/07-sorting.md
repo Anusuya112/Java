@@ -5,11 +5,15 @@ Merge Sorted Array.
 Program:
 
 import java.util.*;
+
 class Main {
+
     public static void main(String[] args) {
         int[] a={1,2,3,0,0,0}, b={2,5,6};
+        
         for(int i=0;i<3;i++) a[i+3]=b[i];
         Arrays.sort(a);
+        
         System.out.println(Arrays.toString(a));
     }
 }
@@ -27,6 +31,7 @@ Majority Element
 Program:
 
 class Main {
+
     public static void main(String[] args) {
         int[] a={2,2,1,1,1,2,2};
         int ans=0,count=0;
@@ -54,11 +59,16 @@ Contains Duplicate
 Program:
 
 import java.util.*;
+
 class Main {
+
     public static void main(String[] args) {
         int[] a={1,2,3,1};
+        
         HashSet<Integer> s=new HashSet<>();
+        
         for(int x:a)
+        
             if(!s.add(x)){System.out.println(true);return;}
         System.out.println(false);
     }
@@ -77,6 +87,7 @@ Missing Number
 Program:
 
 class Main {
+
     public static void main(String[] args) {
         int[] a = {3,0,1};
         int sum = a.length * (a.length + 1) / 2;
