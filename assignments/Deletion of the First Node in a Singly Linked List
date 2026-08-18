@@ -1,38 +1,53 @@
-class DNode{
+Program:
+
+class DNode {
     int data;
     DNode next;
-    DNode(int x){
+
+    DNode(int x) {
         data = x;
         next = null;
     }
 }
-class DMain{
-    static DNode DeletingNode(DNode head){
-        if(head == null)
+
+public class Main {
+
+    static DNode deleteNode(DNode head) {
+        if (head == null)
             return null;
-        DNode temp = head;
+
         head = head.next;
-        temp = null;
         return head;
     }
-    static void printList(DNode curr){
-        while(curr!=null){
-            System.out.println(curr.data);
-            if(curr.next!=null){
-                System.out.println(" -> ");
-            }curr = curr.next;
+
+    static void printList(DNode curr) {
+        while (curr != null) {
+            System.out.print(curr.data);
+
+            if (curr.next != null) {
+                System.out.print(" -> ");
+            }
+
+            curr = curr.next;
         }
     }
 
     public static void main(String[] args) {
+
         DNode head = new DNode(8);
         head.next = new DNode(2);
         head.next.next = new DNode(3);
         head.next.next.next = new DNode(1);
         head.next.next.next.next = new DNode(7);
-        head = DeletingNode(head);
+
+        head = deleteNode(head);
+
         printList(head);
     }
 }
-public class DeletingNode {
-}
+
+Output:
+
+2 -> 3 -> 1 -> 7
+
+=== Code Execution Successful ===
