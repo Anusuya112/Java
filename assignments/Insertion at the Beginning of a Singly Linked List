@@ -1,35 +1,56 @@
-class CNode{
+Program:
+
+class CNode {
     int data;
     CNode next;
-    CNode(int new_data){
+
+    CNode(int new_data) {
         this.data = new_data;
         this.next = null;
     }
 }
-class NodeMain{
-    static CNode InsertAtFront(CNode head,int x){
+
+public class Main {
+
+    static CNode InsertAtFront(CNode head, int x) {
         CNode newNode = new CNode(x);
         newNode.next = head;
         return newNode;
     }
-    static void printList(CNode head){
+
+    static void printList(CNode head) {
         CNode curr = head;
-        while(curr!= null){
-            System.out.println(curr.data);
-            if(curr.next!= null){
-                System.out.println(" - > ");
-            }curr = curr.next;
+
+        while (curr != null) {
+            System.out.print(curr.data);
+
+            if (curr.next != null) {
+                System.out.print(" -> ");
+            }
+
+            curr = curr.next;
         }
+
         System.out.println();
     }
 
     public static void main(String[] args) {
+
         CNode head = new CNode(2);
         head.next = new CNode(3);
         head.next.next = new CNode(4);
         head.next.next.next = new CNode(5);
+
         int x = 1;
-        head = InsertAtFront(head,x);
+
+        head = InsertAtFront(head, x);
+
         printList(head);
     }
 }
+
+Output:
+
+1 -> 2 -> 3 -> 4 -> 5
+
+=== Code Execution Successful ===
