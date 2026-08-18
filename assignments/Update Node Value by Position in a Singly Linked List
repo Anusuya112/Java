@@ -1,5 +1,19 @@
+Program:
+
 public class UpdateNode {
-    public static boolean UpdateNode(Node head, int position, int newValue) {
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    public static boolean updateNode(Node head, int position, int newValue) {
+
         if (head == null || position <= 0) {
             return false;
         }
@@ -13,14 +27,15 @@ public class UpdateNode {
         }
 
         if (temp != null) {
-            temp.data = newValue; // Update data
+            temp.data = newValue;
             return true;
         }
 
-        return false; // Position out of bounds
+        return false;
     }
 
     public static void main(String[] args) {
+
         Node head = new Node(10);
         head.next = new Node(20);
         head.next.next = new Node(30);
@@ -28,12 +43,34 @@ public class UpdateNode {
         int posToUpdate = 2;
         int newValue = 25;
 
-        boolean success = UpdateNode(head, posToUpdate, newValue);
+        boolean success = updateNode(head, posToUpdate, newValue);
 
         if (success) {
-            System.out.println("Node at position " + posToUpdate + " updated to " + newValue);
+            System.out.println(
+                "Node at position " + posToUpdate +
+                " updated to " + newValue
+            );
         } else {
             System.out.println("Invalid position!");
         }
+
+        Node temp = head;
+
+        System.out.print("Linked List: ");
+
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+
+        System.out.println("NULL");
     }
 }
+
+Output:
+
+Node at position 2 updated to 25
+
+Linked List: 10 -> 25 -> 30 -> NULL
+
+=== Code Execution Successful ===
