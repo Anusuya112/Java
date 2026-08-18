@@ -1,3 +1,5 @@
+Program:
+
 class DSMain {
     static class DSNode {
         int data;
@@ -51,3 +53,15 @@ class DSMain {
         printList(head);
     }
 }
+
+Output:
+
+Original List:
+
+1 -> 2 -> 3 -> 4 -> 5 -> null
+
+After deleting position :
+
+1 -> 2 -> 4 -> 5 -> null
+
+=== Code Execution Successful ===
