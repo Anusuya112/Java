@@ -1,5 +1,17 @@
+Program:
+
 public class TraverseNode {
-    // Traverse and print all elements in the list
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
     public static void traverse(Node head) {
         if (head == null) {
             System.out.println("The list is empty.");
@@ -7,11 +19,14 @@ public class TraverseNode {
         }
 
         Node temp = head;
+
         System.out.print("Linked List: ");
+
         while (temp != null) {
             System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
+
         System.out.println("NULL");
     }
 
@@ -23,3 +38,9 @@ public class TraverseNode {
         traverse(head);
     }
 }
+
+Output:
+
+Linked List: 10 -> 20 -> 30 -> NULL
+
+=== Code Execution Successful ===
