@@ -42,3 +42,116 @@ Output:
 5
 
 === Code Execution Successful ===
+
+2.Question:
+
+Reverse Linked List
+
+Program:
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int val) {
+        this.val = val;
+        this.next = null;
+    }
+}
+
+class Solution {
+    public ListNode reverseList(ListNode head) {
+
+        ListNode prev = null;
+        ListNode curr = head;
+
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        return prev;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+
+        Solution solution = new Solution();
+
+        ListNode result = solution.reverseList(head);
+
+        while (result != null) {
+            System.out.print(result.val + " ");
+            result = result.next;
+        }
+    }
+}
+
+Output:
+
+5 4 3 2 1 
+
+=== Code Execution Successful ===
+
+3.Question:
+
+Delete Node in a Linked List
+
+Program:
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int val) {
+        this.val = val;
+        this.next = null;
+    }
+}
+
+class Solution {
+    public void deleteNode(ListNode node) {
+        node.val = node.next.val;
+        node.next = node.next.next;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        
+        ListNode head = new ListNode(4);
+        head.next = new ListNode(5);
+        head.next.next = new ListNode(1);
+        head.next.next.next = new ListNode(9);
+
+        
+        ListNode nodeToDelete = head.next;
+
+        Solution solution = new Solution();
+        solution.deleteNode(nodeToDelete);
+
+        
+        ListNode current = head;
+
+        while (current != null) {
+            System.out.print(current.val + " ");
+            current = current.next;
+        }
+    }
+}
+
+Output:
+
+4 1 9 
+
+=== Code Execution Successful ===
