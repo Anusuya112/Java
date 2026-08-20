@@ -1,0 +1,166 @@
+1.Question:
+
+Reverse a stack in the linked list.
+
+Program:
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class Stack {
+    Node top;
+
+    void push(int data) {
+        Node newNode = new Node(data);
+        newNode.next = top;
+        top = newNode;
+    }
+
+    int pop() {
+        if (top == null) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+
+        int data = top.data;
+        top = top.next;
+        return data;
+    }
+
+    void display() {
+        Node temp = top;
+
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+    void reverse() {
+        Node prev = null;
+        Node current = top;
+
+        while (current != null) {
+            Node next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        top = prev;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Stack stack = new Stack();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+
+        System.out.println("Original stack:");
+        stack.display();
+
+        stack.reverse();
+
+        System.out.println("Reversed stack:");
+        stack.display();
+    }
+}
+
+Output:
+
+Original stack:
+
+40 30 20 10 
+
+Reversed stack:
+
+10 20 30 40 
+
+2.Question:
+
+Duplicate the value in the stack
+
+Program:
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+    }
+}
+
+class Stack {
+    Node top;
+
+    void push(int data) {
+        Node newNode = new Node(data);
+        newNode.next = top;
+        top = newNode;
+    }
+
+    void display() {
+        Node temp = top;
+
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+
+    void duplicate() {
+        Node current = top;
+
+        while (current != null) {
+            Node duplicate = new Node(current.data);
+
+            duplicate.next = current.next;
+            current.next = duplicate;
+
+            current = duplicate.next;
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Stack stack = new Stack();
+
+        stack.push(30);
+        stack.push(20);
+        stack.push(10);
+
+        System.out.println("Before:");
+        stack.display();
+
+        stack.duplicate();
+
+        System.out.println("After:");
+        stack.display();
+    }
+}
+
+Output:
+
+Before:
+
+10 20 30 
+
+After:
+
+10 10 20 20 30 30
