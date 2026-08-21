@@ -164,3 +164,39 @@ Before:
 After:
 
 10 10 20 20 30 30
+
+3.Question:
+
+Duplicate the value in the queue
+
+Program:
+
+import java.util.*;
+
+public class DuplicateQueue {
+    public static void main(String[] args) {
+        Queue<Integer> queue = new LinkedList<>();
+
+        queue.add(10);
+        queue.add(20);
+        queue.add(30);
+
+        System.out.println("Original Queue: " + queue);
+
+        int size = queue.size();
+
+        for (int i = 0; i < size; i++) {
+            int value = queue.poll();
+            queue.add(value);
+            queue.add(value);
+        }
+
+        System.out.println("Queue after duplication: " + queue);
+    }
+}
+
+Output:
+
+Original Queue: [10, 20, 30]
+
+Queue after duplication: [10, 10, 20, 20, 30, 30]
