@@ -1,0 +1,70 @@
+1.Program:
+
+class Student {
+    private String name;
+    private int age;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student();
+
+        s.setName("Rahul");
+        s.setAge(20);
+
+        System.out.println("Name: " + s.getName());
+        System.out.println("Age: " + s.getAge());
+    }
+}
+
+Output:
+
+Name: Rahul
+
+Age: 20
+
+2.Program:
+
+class BankAccount {
+    private double balance;
+
+    public void setBalance(double balance) {
+        if (balance >= 0) {
+            this.balance = balance;
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount();
+
+        account.setBalance(5000);
+
+        System.out.println("Account Balance: " + account.getBalance());
+    }
+}
+
+Output:
+
+Account Balance: 5000.0
