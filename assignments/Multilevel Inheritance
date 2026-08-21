@@ -20,10 +20,17 @@ class Car extends FourWheeler {
 
 public class Main {
     public static void main(String[] args) {
-        Car obj = new Car();
+        Car obj = new Car()
+
     }
 }
 
 Output:
 
 This is a Vehicle
+
+4 Wheeler Vehicles
+
+This 4 Wheeler is a Car
+
+=== Code Execution Successful ===
